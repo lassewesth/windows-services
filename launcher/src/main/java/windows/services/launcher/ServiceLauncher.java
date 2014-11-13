@@ -30,8 +30,7 @@ public class ServiceLauncher
 
                 String serviceName = new String( buffer );
 
-                Runtime.getRuntime().exec( "eventcreate /t information /id 1000 /so launcher /d \"install service " +
-                        serviceName + "\"" );
+                Runtime.getRuntime().exec( "eventcreate /t information /id 1000 /d \"installing service " + serviceName + "\" /so launcher /l application" );
             }
             finally
             {
