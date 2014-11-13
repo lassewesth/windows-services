@@ -1,0 +1,1 @@
+java -jar %~dp0..\launcher\target\launcher-1.0-SNAPSHOT.jar

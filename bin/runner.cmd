@@ -1,0 +1,1 @@
+java -jar %~dp0..\runner\target\runner-1.0-SNAPSHOT.jar

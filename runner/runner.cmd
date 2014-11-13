@@ -1,1 +1,0 @@
-java -jar target\runner-1.0-SNAPSHOT.jar
