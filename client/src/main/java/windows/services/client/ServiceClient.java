@@ -7,11 +7,16 @@ public class ServiceClient
 {
     public static void main( String[] args ) throws Exception
     {
-        Socket socket = new Socket( InetAddress.getLocalHost(), 42187 );
+        if (args.length != 2) throw new IllegalArgumentException( "need port, message" );
+
+        int port = Integer.parseInt( args[0] );
+        String message = args[1];
+
+        Socket socket = new Socket( InetAddress.getLocalHost(), port );
 
         try
         {
-            socket.getOutputStream().write( "helloworld".getBytes() );
+            socket.getOutputStream().write( message.getBytes() );
         }
         finally
         {
